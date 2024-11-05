@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1>Explore India</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#taj-mahal">Taj Mahal</a></li>
+                <li><a href="#red-fort">Red Fort</a></li>
+                <li><a href="#qutub-minar">Qutub Minar</a></li>
+                <li><a href="#ajantha-ellora-caves">Ajantha Ellora Caves</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Parallax Effect -->
+    <div class="hero">
+        <div class="overlay">
+            <h2>India's Historical Wonders</h2>
+            <p>Discover the legacy of India’s architectural wonders.</p>
+            <a href="#taj-mahal" class="cta-button">Start Your Journey</a>
+        </div>
+    </div>
+
+    <!-- Main Content with Grid Layout -->
+    <main>
+        <section id="taj-mahal" class="place">
+            <h2>Taj Mahal</h2>
+            <div class="image-container">
+                <img src="tajmahal.jpeg" alt="Taj Mahal">
+            </div>
+            <p>The Taj Mahal in Agra, built by Emperor Shah Jahan, is an iconic symbol of love and one of the Seven Wonders of the World.</p>
+        </section>
+
+        <section id="red-fort" class="place">
+            <h2>Red Fort</h2>
+            <div class="image-container">
+                <img src="redfort.jpeg" alt="Red Fort">
+            </div>
+            <p>The Red Fort in Delhi served as the main residence of the Mughal Emperors for over 200 years.</p>
+        </section>
+
+        <section id="qutub-minar" class="place">
+            <h2>Qutub Minar</h2>
+            <div class="image-container">
+                <img src="qutubminar.jpeg" alt="Qutub Minar">
+            </div>
+            <p>The Qutub Minar in Delhi is a UNESCO World Heritage Site and the tallest brick minaret in the world.</p>
+        </section>
+
+        <section id="hampi" class="place">
+            <h2>Ajantha Ellora Caves</h2>
+            <div class="image-container">
+                <img src="ajanta elora caves.avif" alt="Ajantha Ellora Caves">
+            </div>
+            <p>The ancient Caves in Ellora</p>
+        </section>
+    </main>
+
+    <!-- Floating Scroll-to-Top Button -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Developed by Nishant Rajput. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Scroll-to-Top Button -->
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
